@@ -1,0 +1,795 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: url('bg.jpg') no-repeat 50%;
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+#div1024 {
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+}
+
+.main {
+	padding: 5px;
+	background: rgb(192, 173, 156);
+	width: calc(100% - 10px);
+	position: relative;
+}
+
+li {
+	list-style: none
+}
+
+.main>li {
+	width: 100%;
+	overflow: hidden
+}
+
+.main>li ul li {
+	border: 1px solid rgb(192, 173, 156);
+	width: calc(25% - 2px);
+	height: 0;
+	border-collapse: collapse;
+	text-align: center;
+	line-height: 80px;
+	font-size: 36px;
+	float: left;
+	padding-top: calc(25% - 2px);
+	position: relative;
+}
+
+.groups {
+	display: flex;
+}
+
+.score {
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.full {
+	border-radius: 15%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+ul li li {
+	border-radius: 15%;
+	background: rgb(205, 193, 179);
+}
+
+#mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: red;
+	font-size: 40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#mask span {
+	margin-top: auto;
+}
+
+#mask button {
+	margin: 30px auto auto;
+	width: 48%;
+	min-width: 175px;
+	height: 39px;
+	font-size: 20px;
+	background: #ccb300;
+	border: none;
+	color: white;
+}
+
+.full>span {
+	font-size: 30px;
+	line-height: 1px;
+	width: 100%;
+	text-align: center;
+	font-weight: 900;
+	margin: auto;
+}
+
+.style2 {
+	background-color: rgb(237, 229, 218);
+}
+
+.style4 {
+	background-color: rgb(235, 216, 191);
+	animation: tos4 0.2s;
+	-moz-animation: tos4 0.2s;
+	-webkit-animation: tos4 0.2s;
+	-o-animation: tos4 0.2s;
+}
+
+.style8 {
+	background-color: rgb(242, 177, 123);
+	animation: tos8 0.2s;
+	-moz-animation: tos8 0.2s;
+	-webkit-animation: tos8 0.2s;
+	-o-animation: tos8 0.2s;
+}
+
+.style16 {
+	background-color: rgb(246, 147, 92);
+	animation: tos16 0.2s;
+	-moz-animation: tos16 0.2s;
+	-webkit-animation: tos16 0.2s;
+	-o-animation: tos16 0.2s;
+}
+
+.style32 {
+	background-color: rgb(242, 116, 86);
+	animation: tos32 0.2s;
+	-moz-animation: tos32 0.2s;
+	-webkit-animation: tos32 0.2s;
+	-o-animation: tos32 0.2s;
+}
+
+.style64 {
+	background-color: rgb(243, 81, 46);
+	animation: tos64 0.2s;
+	-moz-animation: tos64 0.2s;
+	-webkit-animation: tos64 0.2s;
+	-o-animation: tos64 0.2s;
+}
+
+.style128 {
+	background-color: rgb(255, 210, 0);
+	animation: tos128 0.2s;
+	-moz-animation: tos128 0.2s;
+	-webkit-animation: tos128 0.2s;
+	-o-animation: tos128 0.2s;
+}
+
+.style256 {
+	background-color: rgb(230, 209, 81);
+	animation: tos256 0.2s;
+	-moz-animation: tos256 0.2s;
+	-webkit-animation: tos256 0.2s;
+	-o-animation: tos256 0.2s;
+}
+
+.style512 {
+	background-color: rgb(204, 164, 11);
+	animation: tos512 0.2s;
+	-moz-animation: tos512 0.2s;
+	-webkit-animation: tos512 0.2s;
+	-o-animation: tos512 0.2s;
+}
+
+.style1024 {
+	background-color: rgb(143, 75, 56);
+	animation: tos1024 0.2s;
+	-moz-animation: tos1024 0.2s;
+	-webkit-animation: tos1024 0.2s;
+	-o-animation: tos1024 0.2s;
+}
+
+.style2048 {
+	background-color: rgb(142, 62, 31);
+	animation: tos2048 0.2s;
+	-moz-animation: tos2048 0.2s;
+	-webkit-animation: tos2048 0.2s;
+	-o-animation: tos2048 0.2s;
+}
+
+.style4096 {
+	background-color: rgb(106, 52, 39);
+	animation: tos4096 0.2s;
+	-moz-animation: tos4096 0.2s;
+	-webkit-animation: tos4096 0.2s;
+	-o-animation: tos4096 0.2s;
+}
+
+.style8192 {
+	background-color: rgb(110, 107, 65);
+	animation: tos8192 0.2s;
+	-moz-animation: tos8192 0.2s;
+	-webkit-animation: tos8192 0.2s;
+	-o-animation: tos8192 0.2s;
+}
+
+.new {
+	animation: tosee 0.3s;
+	-moz-animation: tosee 0.3s;
+	-webkit-animation: tosee 0.3s;
+	-o-animation: tosee 0.3s;
+}
+
+@media only screen and (max-width: 320px) {
+	.full>span {
+		font-size: 26px !important;
+	}
+}
+
+@media only screen and (max-width: 285px) {
+	.full>span {
+		font-size: 20px !important;
+	}
+}
+
+@media only screen and (max-width: 230px) {
+	.full>span {
+		font-size: 16px !important;
+	}
+}
+
+@-o-keyframes tos8192 {
+	from {
+		background-color: rgb(106, 52, 39);
+	}
+
+	to {
+		background-color: rgb(110, 107, 65);
+	}
+}
+
+@-webkit-keyframes tos8192 {
+	from {
+		background-color: rgb(106, 52, 39);
+	}
+
+	to {
+		background-color: rgb(110, 107, 65);
+	}
+}
+
+@-moz-keyframes tos8192 {
+	from {
+		background-color: rgb(106, 52, 39);
+	}
+
+	to {
+		background-color: rgb(110, 107, 65);
+	}
+}
+
+@keyframes tos8192 {
+	from {
+		background-color: rgb(106, 52, 39);
+	}
+
+	to {
+		background-color: rgb(110, 107, 65);
+	}
+}
+
+@-o-keyframes tos4096 {
+	from {
+		background-color: rgb(142, 62, 31);
+	}
+
+	to {
+		background-color: rgb(106, 52, 39);
+	}
+}
+
+@-webkit-keyframes tos4096 {
+	from {
+		background-color: rgb(142, 62, 31);
+	}
+
+	to {
+		background-color: rgb(106, 52, 39);
+	}
+}
+
+@-moz-keyframes tos4096 {
+	from {
+		background-color: rgb(142, 62, 31);
+	}
+
+	to {
+		background-color: rgb(106, 52, 39);
+	}
+}
+
+@keyframes tos4096 {
+	from {
+		background-color: rgb(142, 62, 31);
+	}
+
+	to {
+		background-color: rgb(106, 52, 39);
+	}
+}
+
+@-o-keyframes tos2048 {
+	from {
+		background-color: rgb(143, 75, 56);
+	}
+
+	to {
+		background-color: rgb(142, 62, 31);
+	}
+}
+
+@-webkit-keyframes tos2048 {
+	from {
+		background-color: rgb(143, 75, 56);
+	}
+
+	to {
+		background-color: rgb(142, 62, 31);
+	}
+}
+
+@-moz-keyframes tos2048 {
+	from {
+		background-color: rgb(143, 75, 56);
+	}
+
+	to {
+		background-color: rgb(142, 62, 31);
+	}
+}
+
+@keyframes tos2048 {
+	from {
+		background-color: rgb(143, 75, 56);
+	}
+
+	to {
+		background-color: rgb(142, 62, 31);
+	}
+}
+
+@-o-keyframes tos1024 {
+	from {
+		background-color: rgb(204, 164, 11);
+	}
+
+	to {
+		background-color: rgb(143, 75, 56);
+	}
+}
+
+@-webkit-keyframes tos1024 {
+	from {
+		background-color: rgb(204, 164, 11);
+	}
+
+	to {
+		background-color: rgb(143, 75, 56);
+	}
+}
+
+@-moz-keyframes tos1024 {
+	from {
+		background-color: rgb(204, 164, 11);
+	}
+
+	to {
+		background-color: rgb(143, 75, 56);
+	}
+}
+
+@keyframes tos1024 {
+	from {
+		background-color: rgb(204, 164, 11);
+	}
+
+	to {
+		background-color: rgb(143, 75, 56);
+	}
+}
+
+@-o-keyframes tos512 {
+	from {
+		background-color: rgb(230, 209, 81);
+	}
+
+	to {
+		background-color: rgb(204, 164, 11);
+	}
+}
+
+@-webkit-keyframes tos512 {
+	from {
+		background-color: rgb(230, 209, 81);
+	}
+
+	to {
+		background-color: rgb(204, 164, 11);
+	}
+}
+
+@-moz-keyframes tos512 {
+	from {
+		background-color: rgb(230, 209, 81);
+	}
+
+	to {
+		background-color: rgb(204, 164, 11);
+	}
+}
+
+@keyframes tos512 {
+	from {
+		background-color: rgb(230, 209, 81);
+	}
+
+	to {
+		background-color: rgb(204, 164, 11);
+	}
+}
+
+@-o-keyframes tos256 {
+	from {
+		background-color: rgb(255, 210, 0);
+	}
+
+	to {
+		background-color: rgb(230, 209, 81);
+	}
+}
+
+@-webkit-keyframes tos256 {
+	from {
+		background-color: rgb(255, 210, 0);
+	}
+
+	to {
+		background-color: rgb(230, 209, 81);
+	}
+}
+
+@-moz-keyframes tos256 {
+	from {
+		background-color: rgb(255, 210, 0);
+	}
+
+	to {
+		background-color: rgb(230, 209, 81);
+	}
+}
+
+@keyframes tos256 {
+	from {
+		background-color: rgb(255, 210, 0);
+	}
+
+	to {
+		background-color: rgb(230, 209, 81);
+	}
+}
+
+@-o-keyframes tos128 {
+	from {
+		background-color: rgb(243, 81, 46);
+	}
+
+	to {
+		background-color: rgb(255, 210, 0);
+	}
+}
+
+@-webkit-keyframes tos128 {
+	from {
+		background-color: rgb(243, 81, 46);
+	}
+
+	to {
+		background-color: rgb(255, 210, 0);
+	}
+}
+
+@-moz-keyframes tos128 {
+	from {
+		background-color: rgb(243, 81, 46);
+	}
+
+	to {
+		background-color: rgb(255, 210, 0);
+	}
+}
+
+@keyframes tos128 {
+	from {
+		background-color: rgb(243, 81, 46);
+	}
+
+	to {
+		background-color: rgb(255, 210, 0);
+	}
+}
+
+@-o-keyframes tos64 {
+	from {
+		background-color: rgb(242, 116, 86);
+	}
+
+	to {
+		background-color: rgb(243, 81, 46);
+	}
+}
+
+@-webkit-keyframes tos64 {
+	from {
+		background-color: rgb(242, 116, 86);
+	}
+
+	to {
+		background-color: rgb(243, 81, 46);
+	}
+}
+
+@-moz-keyframes tos64 {
+	from {
+		background-color: rgb(242, 116, 86);
+	}
+
+	to {
+		background-color: rgb(243, 81, 46);
+	}
+}
+
+@keyframes tos64 {
+	from {
+		background-color: rgb(242, 116, 86);
+	}
+
+	to {
+		background-color: rgb(243, 81, 46);
+	}
+}
+
+@-o-keyframes tos32 {
+	from {
+		background-color: rgb(246, 147, 92);
+	}
+
+	to {
+		background-color: rgb(242, 116, 86);
+	}
+}
+
+@-webkit-keyframes tos32 {
+	from {
+		background-color: rgb(246, 147, 92);
+	}
+
+	to {
+		background-color: rgb(242, 116, 86);
+	}
+}
+
+@-moz-keyframes tos32 {
+	from {
+		background-color: rgb(246, 147, 92);
+	}
+
+	to {
+		background-color: rgb(242, 116, 86);
+	}
+}
+
+@keyframes tos32 {
+	from {
+		background-color: rgb(246, 147, 92);
+	}
+
+	to {
+		background-color: rgb(242, 116, 86);
+	}
+}
+
+@-o-keyframes tos16 {
+	from {
+		background-color: rgb(242, 177, 123);
+	}
+
+	to {
+		background-color: rgb(246, 147, 92);
+	}
+}
+
+@-webkit-keyframes tos16 {
+	from {
+		background-color: rgb(242, 177, 123);
+	}
+
+	to {
+		background-color: rgb(246, 147, 92);
+	}
+}
+
+@-moz-keyframes tos16 {
+	from {
+		background-color: rgb(242, 177, 123);
+	}
+
+	to {
+		background-color: rgb(246, 147, 92);
+	}
+}
+
+@keyframes tos16 {
+	from {
+		background-color: rgb(242, 177, 123);
+	}
+
+	to {
+		background-color: rgb(246, 147, 92);
+	}
+}
+
+@-o-keyframes tos8 {
+	from {
+		background-color: rgb(235, 216, 191);
+	}
+
+	to {
+		background-color: rgb(242, 177, 123);
+	}
+}
+
+@-webkit-keyframes tos8 {
+	from {
+		background-color: rgb(235, 216, 191);
+	}
+
+	to {
+		background-color: rgb(242, 177, 123);
+	}
+}
+
+@-moz-keyframes tos8 {
+	from {
+		background-color: rgb(235, 216, 191);
+	}
+
+	to {
+		background-color: rgb(242, 177, 123);
+	}
+}
+
+@keyframes tos8 {
+	from {
+		background-color: rgb(235, 216, 191);
+	}
+
+	to {
+		background-color: rgb(242, 177, 123);
+	}
+}
+
+@-o-keyframes tos4 {
+	from {
+		background-color: rgb(237, 229, 218);
+	}
+
+	to {
+		background-color: rgb(235, 216, 191);
+	}
+}
+
+@-webkit-keyframes tos4 {
+	from {
+		background-color: rgb(237, 229, 218);
+	}
+
+	to {
+		background-color: rgb(235, 216, 191);
+	}
+}
+
+@-moz-keyframes tos4 {
+	from {
+		background-color: rgb(237, 229, 218);
+	}
+
+	to {
+		background-color: rgb(235, 216, 191);
+	}
+}
+
+@keyframes tos4 {
+	from {
+		background-color: rgb(237, 229, 218);
+	}
+
+	to {
+		background-color: rgb(235, 216, 191);
+	}
+}
+
+@keyframes tosee {
+	from {
+		opacity: 0.5;
+		width: 30%;
+		height: 30%;
+		top: 35%;
+		left: 35%;
+	}
+
+	to {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+@-moz-keyframes tosee {
+	from {
+		opacity: 0.5;
+		width: 30%;
+		height: 30%;
+		top: 35%;
+		left: 35%;
+	}
+
+	to {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+@-webkit-keyframes tosee {
+	from {
+		opacity: 0.5;
+		width: 30%;
+		height: 30%;
+		top: 35%;
+		left: 35%;
+	}
+
+	to {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+@-o-keyframes tosee {
+	from {
+		opacity: 0.5;
+		width: 30%;
+		height: 30%;
+		top: 35%;
+		left: 35%;
+	}
+
+	to {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}

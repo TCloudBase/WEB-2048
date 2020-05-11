@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>2048</title>
+    <link rel="stylesheet" type="text/css" href="asset/index.css" />
+    <script src="//imgcache.qq.com/qcloud/tcbjs/1.6.1/tcb.js"></script>
+  </head>
+  <body onselectstart="return false" data-gr-c-s-loaded="true">
+    <div id="div1024">
+      <div class="groups">
+        <div class="score">得分：<span id="score">0</span></div>
+        <div class="score">步数：<span id="step">0</span></div>
+      </div>
+      <ul id="model" class="main">
+        <li class="line0">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li class="line1">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li class="line2">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li class="line3">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <div id="mask" style="display: none;">
+          <span>游戏结束</span>
+          <button onclick="reinit()">再来一局</button>
+        </div>
+      </ul>
+      <div class="groups">
+        <div class="score">个人最高：<span id="maxscore">0</span></div>
+        <div class="score">全网最高：<span id="netscore">0</span></div>
+      </div>
+    </div>
+    <script src="asset/cloud.js"></script>
+    <script src="asset/index.js"></script>
+    <script>
+      cloudinit();
+    </script>
+  </body>
+</html>
